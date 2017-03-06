@@ -70,7 +70,8 @@ class pmSimulator : public App {
     void setProjPosition(vec3 pos);
     vec3 getProjPosition();
 
-    string objPath;
+    fs::path planPath;
+    string objName;
     
     CameraPersp*		mCam;
     CameraUi			mCamUi;
@@ -392,8 +393,8 @@ void pmSimulator::loadObjButton(){
     try {
         fs::path path = getOpenFilePath("", {"obj"});
         if( ! path.empty() ) {
-            objPath = path.string();
-            loadObj(loadFile(objPath));
+            objName = path.filename().string();
+            loadObj(loadFile(path));
         }
     }
     catch(Exception &exc) {
@@ -462,8 +463,8 @@ void pmSimulator::loadConfButton(){
 }
 
 void pmSimulator::loadPlan( const DataSourceRef &dataSource ){
-    fs::path path = dataSource->getFilePath();
-    ifstream fin(path.c_str(), ios::in);
+    planPath = dataSource->getFilePath();
+    ifstream fin(planPath.c_str(), ios::in);
     // error check
     if(!fin){
         cout << "loadPlan(): cannot open the file..." << endl;
@@ -473,10 +474,10 @@ void pmSimulator::loadPlan( const DataSourceRef &dataSource ){
         while(fin && getline(fin, line)){
             if(line.find("object:")==0){
                 line.replace(0,7,"");
-                objPath = line;
-                fs::path path = objPath;
-                if(!path.empty()) {
-                    loadObj(loadFile(objPath));
+                objName = line;
+                if(!objName.empty()) {
+                    string dir = planPath.parent_path().string();
+                    loadObj(loadFile(dir+"/"+objName));
                 } else {
                     cout << "no object file" << endl;
                 }
@@ -578,7 +579,7 @@ void pmSimulator::savePlan(){
                 return;
             } else {
                 
-                fout << "object:" << objPath << "\n\n";
+                fout << "object:" << objName << "\n\n";
                 
                 vec3 pos = mPerspectiveCam.getEyePoint();
                 vec3 dir = mPerspectiveCam.getViewDirection();

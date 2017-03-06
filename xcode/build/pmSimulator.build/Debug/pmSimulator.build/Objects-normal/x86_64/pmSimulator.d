@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/kazushi/OneDrive\ -\ 公立はこだて未来大学/pmSimulator/cinder_0.9.0_mac/myprojects/pjm_simulator/src/pmSimulator.cpp \
+  /Users/kazushi/OneDrive\ -\ 公立はこだて未来大学/pmSimulator/cinder_0.9.0_mac/myprojects/pmSimulator/src/pmSimulator.cpp \
   ../../../include/cinder/app/RendererGl.h \
   ../../../include/cinder/CameraUi.h ../../../include/cinder/Log.h \
   ../../../include/cinder/System.h \
@@ -330,6 +330,6 @@ dependencies: \
   ../../../include/boost/integer.hpp \
   ../../../include/boost/integer_fwd.hpp \
   ../../../include/boost/detail/basic_pointerbuf.hpp \
-  /Users/kazushi/OneDrive\ -\ 公立はこだて未来大学/pmSimulator/cinder_0.9.0_mac/myprojects/pjm_simulator/include/Resources.h \
+  /Users/kazushi/OneDrive\ -\ 公立はこだて未来大学/pmSimulator/cinder_0.9.0_mac/myprojects/pmSimulator/include/Resources.h \
   ../../../include/cinder/CinderResources.h \
-  /Users/kazushi/OneDrive\ -\ 公立はこだて未来大学/pmSimulator/cinder_0.9.0_mac/myprojects/pjm_simulator/src/Projector.h
+  /Users/kazushi/OneDrive\ -\ 公立はこだて未来大学/pmSimulator/cinder_0.9.0_mac/myprojects/pmSimulator/src/Projector.h
