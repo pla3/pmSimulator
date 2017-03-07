@@ -1,6 +1,6 @@
 # pmSimulator
 
-<img alt=”pmSimulator” src=”https://raw.githubusercontent.com/wiki/pla3/pmSimulator/images/pmsimulator_thumb.png” />
+![default screen](https://raw.githubusercontent.com/wiki/pla3/pmSimulator/images/pmsimulator_thumb.png)<br>
 
 Projection Mapping Simulator<br>
 pmSimulator is a kind of the simulaotr to check how effect projectores are influenced to an object. You can get the plan to allocate projectors using this software.<br>
