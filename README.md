@@ -1,6 +1,6 @@
 # pmSimulator
 
-![binary file:001](https://raw.githubusercontent.com/wiki/pla3/pmSimulator/pmSimulator001.zip)<br>
+![click here to download the binary file:001](https://raw.githubusercontent.com/wiki/pla3/pmSimulator/pmSimulator001.zip)<br>
 
 ![default screen](https://raw.githubusercontent.com/wiki/pla3/pmSimulator/images/pmsimulator_thumb.png)<br>
 
